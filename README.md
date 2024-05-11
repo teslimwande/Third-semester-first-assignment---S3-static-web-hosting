@@ -13,10 +13,18 @@ Utilizing the AWS S3 bucket and Cloudfront to host a static website
 
 ![S3 bucket creation](./bucket_creation.png)
 
-2. Ensure you tick on the button that allows your bucket to host a static website while creating your newly created bucket. Also make sure the access to the bucket remains public; set a default home page for the website, which is "index.html" by default and also an error document, which will be the error message that pops up whenever an error occured e.g "404.html"
+2. Ensure you tick on the button that allows your bucket to host a static website while creating your newly created bucket. Also make sure the access to the bucket remains public; set a default home page for the website, which is "index.html" by default and also an error document, which will be the error message that pops up whenever an error occured e.g "404.html". Leave every other default settings as they are and scroll down to the page end to click "create bucket"
 
 ![edit bucket creation page](./edit_page.png)
 ![edit_page](./edit_static_website.png)
+
+3. Once the bucket has been created, click on the upload button to upload your webpage file or folder (as the case may be), clicking "add files" or "add folders" for each case. Once the files/folder(s) have been successfully uploaded, you can then proceed to move the objects to the rot directory of your bucket.
+
+4. After the objects have been moved, we can then proceed to the Cloudfront page to create a cloudfront distribution, which is going to serve as our content delivery network (CDN), that allows serves users the content of our bucket, without getting access to the main bucket itself.
+
+![bucket creation](./bucket_creation.png)
+
+
 
 
 
